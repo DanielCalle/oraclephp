@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/open-ionic.css">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <i class="fas fa-database" style="margin-right: 1ex"></i>
+                    <strong>ABD - PHP</strong>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Mostrar Oferta
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="MostrarCodOferta">CodOferta</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">CodOferta</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="MostrarCodOferta" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="MostrarClase">Clase</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Clase</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="MostrarClase" placeholder="" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="MostrarTotal">Total</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="MostrarTotal" placeholder="" readonly>
+                                    </div>
+                                </div>
+                                <div id="BotonMostrar" class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-2">Mostrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Crear Oferta
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="CrearCodOferta">CodOferta</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">CodOferta</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="CrearCodOferta" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="CrearClase">Clase</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Clase</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="CrearClase" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="CrearTotal">Total</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="CrearTotal" placeholder="">
+                                    </div>
+                                </div>
+                                <div id="BotonCrear" class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-2">Crear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Eliminar Oferta
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="EliminarCodOferta">CodOferta</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">CodOferta</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="EliminarCodOferta" placeholder="">
+                                    </div>
+                                </div>
+                                <div id="BotonEliminar" class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-2">Eliminar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            Actualizar Oferta
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="ActualizarCodOferta">CodOferta</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">CodOferta</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="ActualizarCodOferta" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="CrearClase">Clase</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Clase</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="ActualizarClase" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="CrearTotal">Total</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="ActualizarTotal" placeholder="">
+                                    </div>
+                                </div>
+                                <div id="BotonActualizar" class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-2">Actualizar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                            Mostrar todas las Ofertas
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">CodOferta</th>
+                                    <th scope="col">Clase</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody id="MostrarTabla">
+                                </tbody>
+                            </table>
+                             <div id="BotonMostrarTodas" class="col-auto">
+                                <button type="button" class="btn btn-primary mb-2">Mostrar todas</button>
+                             </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-right" style="margin-right: 2em; margin-top: 2em">
+                <button id="BotonGuardar" type="button" class="btn btn-success">Guardar</button>
+            </div>
+        </div>
+
+
+    </main>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js" ></script>
+        <script src="js/popper.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/fontawesome-all.min.js" ></script>
+        <script>
+            $( document ).ready(function() {
+                $( "#BotonMostrar" ).click(function() {
+                    var codOferta = $( "#MostrarCodOferta" ).val();
+                    
+                    $.post( "Controlador.php", { accion:"MostrarOferta",CodOferta: codOferta})
+                        .done(function( data ) {
+                            try {
+                                var oferta = jQuery.parseJSON(data);
+                                $( "#MostrarClase" ).val(oferta.Clase);
+                                $( "#MostrarTotal" ).val(oferta.Total);
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+
+                $( "#BotonCrear" ).click(function() {
+                    var codOferta = $( "#CrearCodOferta" ).val();
+                    var clase = $( "#CrearClase" ).val();
+                    var total = $( "#CrearTotal" ).val();
+                    $.post( "Controlador.php", { accion:"CrearOferta",CodOferta: codOferta,Clase:clase, Total:total})
+                        .done(function( data ) {
+                            console.log(data);
+                            try {
+                                var oferta = jQuery.parseJSON(data);
+                                alert("Se ha creado la oferta con CodOferta "+oferta.CodOferta);
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+
+                $( "#BotonEliminar" ).click(function() {
+                    var codOferta = $( "#EliminarCodOferta" ).val();
+                    $.post( "Controlador.php", { accion:"EliminarOferta",CodOferta: codOferta})
+                        .done(function( data ) {
+                            try {
+                                var oferta = jQuery.parseJSON(data);
+                                if(oferta.CodOferta)
+                                    alert("Se ha eliminado la oferta con CodOferta "+oferta.CodOferta);
+                                else
+                                    alert("Error la oferta con CodOferta " +codOferta + " no existe");
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+
+                $( "#BotonActualizar" ).click(function() {
+                    var codOferta = $( "#ActualizarCodOferta" ).val();
+                    var clase = $( "#ActualizarClase" ).val();
+                    var total = $( "#ActualizarTotal" ).val();
+                    $.post( "Controlador.php", { accion:"ActualizarOferta",CodOferta: codOferta,Clase:clase, Total:total})
+                        .done(function( data ) {
+                            try {
+                                var oferta = jQuery.parseJSON(data);
+                                if(oferta.CodOferta)
+                                    alert("Se ha actualizado la oferta con CodOferta "+oferta.CodOferta);
+                                else
+                                    alert("Error la oferta con CodOferta " +codOferta + " no existe");
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+
+                
+                $( "#BotonMostrarTodas" ).click(function() {
+                    $.post( "Controlador.php", { accion:"MostrarTodasOfertas"})
+                        .done(function( data ) {
+                            try {
+                                var lista = jQuery.parseJSON(data);
+                                $( "#MostrarTabla" ).html("");
+                                for (var i = 0; i < lista.length; i++){
+                                    var str = "<tr><th scope=\"row\">"+(i+1)
+                                    +"</th><td>"+lista[i].CodOferta
+                                    +"</td><td>"+lista[i].Clase
+                                    +"</td><td>"+lista[i].Total
+                                    +"</td></tr>";
+                                    $( "#MostrarTabla" ).html($( "#MostrarTabla" ).html()+str);
+                               
+                                }
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+
+                $( "#BotonGuardar" ).click(function() {
+                    $.post( "Controlador.php", { accion:"Guardar"})
+                        .done(function( data ) {
+                            console.log(data);
+                            try {
+                                var res = jQuery.parseJSON(data);
+                                alert("Se ha guardado correctamente")
+                            }
+                            catch(e) {
+                                alert("Error");
+                            }
+                        });
+                });
+            });
+        </script>
+    </body>
+</html>
